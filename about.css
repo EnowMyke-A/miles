@@ -1,0 +1,29 @@
+.head-container{
+    width: 100%;
+    background-image: url(./assets/img/166035-abstract-3D-digital-art-geometry.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    padding-top: 70px;
+}
+
+.Header-text{
+    width:inherit;
+    height: 320px;
+    font-size: 40px;
+    font-weight: 800;
+    background-color: rgba(0, 0, 0, 0.517);
+    text-align: center;
+    padding-top: 160px;
+    margin-top: -70px;
+}
+
+.Header-text h1,h6{
+    color: rgba(255, 253, 253, 0.606);
+    text-align: center;
+}
+
+h6{
+    font-size: 12px;
+    padding: 20px;
+}

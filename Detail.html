@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>MILES MOBILE | Realise That Dream SmartPhone</title>
+
+    <!--Bootstrap v4.6 css-->
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+
+    <!--tab style-->
+    <link rel="stylesheet" href="./assets/main/home.css">
+    
+    <!--main style-->
+    <link rel="stylesheet" href="./assets/main/style.css">
+    <link rel="stylesheet" href="./Detail.css">
+    
+    <!--Bootsrap icons-->
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap-icons-1.10.4/bootstrap-icons-1.10.4/font/bootstrap-icons.css">
+
+    <!--favicon-->
+    <link rel="icon" href="./assets/img/Mile_logo_white.svg">
+
+    <!--aos-->
+    <link rel="stylesheet" href="./assets/aos/aos.css">
+
+    <!--google fonts poppins-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+
+    <!--All page scripts-->
+
+    <!--bootstrap v4.6js-->
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+    
+    <!--fontawesom5 js-->
+    <script src="./assets/font_awesome/all.js"></script>
+
+    <!--aos-->
+    <script src="assets/aos/aos.js"></script>
+
+    <!--main script-->
+     <script src="./Detail.js"></script>
+</head>
+
+<body>
+
+    <!--navigation bar-->
+    <nav role="navigation" id="navigationBar">
+        <div id="logo">
+          <img src="./assets/img/miles-logo-svg-vector.svg" alt="logo" height="120px" class="logoImg lightmode-image">
+          <img src="./assets/img/Mile_logo_white.svg" alt="logo" height="120px" class="logoImg darkmode-image">
+          
+        </div>
+        <div class="navlist">
+            <li class="nav-item"><a href="./index.html" class="nav-link"><i class="bi bi-house icon"></i>&nbsp;<span>HOME</span></a></li>
+            <li class="nav-item"><a href="./Shop.html" class="nav-link active"><i class="bi bi-bag-fill icon"></i>&nbsp;<span>SHOP</span></a></li>
+            <li class="nav-item"><a href="./about.html" class="nav-link"><i class="bi bi-nut icon"></i>&nbsp;<span>ABOUT</span></a></li>
+            <li class="nav-item"><a href="./contact.html" class="nav-link"><i class="bi bi-phone icon"></i>&nbsp;<span>CONTACT</span></a></li>
+            <li class="nav-item cart-item"><a href=""><button class="nav-cart"><i class="bi bi-cart3"></i></button><span class="nav-badge">0</span></a></li>
+            <li class="nav-item"><a href="#newsletter"><button class="nav-button">Subscribe</button></a> </li>
+            <li class="nav-item" id="slide-button" role="button" onclick="SlideNav()"><i class="bi bi-list"></i></li>
+        </div>
+    </nav>
+    <!--end of navigation-->
+
+
+    <!--prodeuct details-->
+    <section class="Product_detail">
+        <div class="Product_image" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
+            <div class="large-image">
+                <img src="./assets/img/iPhone_XR_black.png" alt="Choice" id="mainChoice">
+            </div>
+            <div class="smaller-image">
+                <img src="./assets/img/iPhone_XR_black.png" alt="alt" class="image chosen">
+                <img src="./assets/img/iPhone_XR_blue.png" alt="alt" class="image">
+                <img src="./assets/img/iPhone_XR_white.png" alt="alt" class="image">
+                <img src="./assets/img/iPhone_XR_red.jpg.large.png" alt="" class="image">
+                <img src="./assets/img/iPhone_XR_coral.png" alt="alt" class="image">
+            </div>
+        </div>
+        <div class="product_detailedInfo">
+            <span class="brandName"></span><br>
+            <span class="productName"></span><br>
+            <span class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+            </span>
+            &nbsp;&nbsp;<span class="brandName"><i class="bi bi-person-check-fill"></i> 247 reviews</span>
+            <span class="PdtPrice"><span class="originalPrice"></span><span><i class="bi bi-currency-euro"></i></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="DetailPrice"></span><span><i class="bi bi-currency-euro" style="color:red"></i></span><br>
+            
+            <div>
+                <form action="" id="storage">
+                   <strong>RAM | ROM </i></strong><br>
+                   <label for="radio1"><span class="checkmark"><span class="check"></span></span><input type="radio" name="variant" id="radio1" class="variant"> 2GB | 32GB</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                   <label for="radio2"><input type="radio" name="variant" id="radio2" class="variant"> 2GB | 64GB</label>&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                   <label for="radio3"><input type="radio" name="variant" id="radio3" class="variant" checked="checked"> 2GB | 128GB</label><br>
+                </form><br>
+                <div id="colors">
+                    <strong>Color</strong><br>
+                    <span class="color ChosenColor"><span id="color1" ></span></span>
+                    <span class="color"><span id="color2"></span></span>
+                    <span class="color"><span id="color3"></span></span>
+                    <span class="color"><span id="color4"></span></span>
+                    <span class="color"><span id="color5"></span></span>
+                </div><br>
+                <div class="quantity-addcart">
+                    <div class="quantity">
+                        <button onclick="decr_Qty()">-</button>
+                        <input type="number" name="quantity" id="qtyBar" value="1">
+                        <button onclick="incr_Qty()">+</button>
+                    </div>
+                    <div>
+                        <button class="addToCart">Add to cart <i class="bi bi-cart3"></i></button>
+                    </div>
+                </div>
+                
+            </div><br>
+
+           <div class="Accordian">
+
+            <div class="panel panelOpen">
+                <div class="panelClickable panelActive">
+                <button class="PanelLabel">Description</button><button class="PanelIcon">-</button>
+                </div>
+                <div class="PanelContent contentOpen">
+                <p class="detailedTalk">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis porro illum non pariatur vitae commodi praesentium quis aliquid hic, placeat alias, perspiciatis fugiat? Quos beatae, commodi neque iure dolor possimus?
+                </p>
+                </div>   
+            </div>
+
+            <div class="panel">
+                <div class="panelClickable">
+                    <button class="PanelLabel">Full Specification</button><button class="PanelIcon">+</button>
+                </div>
+                <div class="PanelContent">
+                    <div class="ratePdt">
+                        
+                        <button type="submit" class="SubmitRate addToCart">Submit Rating</button>
+                </div>   
+            </div>
+        </div>
+
+        <div class="panel">
+            <div class="panelClickable">
+                <button class="PanelLabel">Reviews</button><button class="PanelIcon">+</button>
+            </div>
+            <div class="PanelContent">
+                <div class="ratePdt">
+                    <span class="rating">
+                        <i class="bi bi-star rate"></i>
+                        <i class="bi bi-star rate"></i>
+                        <i class="bi bi-star rate"></i>
+                        <i class="bi bi-star rate"></i>
+                        <i class="bi bi-star rate"></i>
+                    </span>
+                    <button type="submit" class="SubmitRate addToCart">Submit Rating</button>
+            </div>   
+        </div>
+    </div>
+
+        </div>
+
+    </section>
+    <h4 style="text-align: center;">RELATED PRODUCTS</h4>
+    <hr class="divider">
+    <section class="product_list">
+        <div class="card-tab">
+            <img src="./assets/img/iphone-12-5g-64gb-purple-2.png" alt="smartphone" class="card-img" width="100%">
+            <div class="card-body">
+                <span class="trademark">APPLE</span><br>
+                <span class="product-name">iPHONE 12</span><span class="badge cart-badge">-30% off</span><br>
+                <span class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </span> <br>
+                <span class="price original">679.00<i class="bi bi-currency-euro"></i></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="price actual">630</span><i class="bi bi-currency-euro"></i>
+                <span><button class="cart3"> <i class="bi bi-cart3" style="display:inline-block"></i> </button></span><br>
+                <span class="specButton-container"><button class="spec-button"><span>View Specification</span> <i class="bi bi-caret-down-fill"></i></button></span> 
+                    <div class="spec-Details">
+                        <strong>COLOR</strong>: &nbsp;&nbsp;Just Black<br>
+                        <strong>MEMORY</strong>: &nbsp;&nbsp;128GB 6GB RAM<br>
+                        <strong>OS</strong>:  &nbsp;&nbsp;Android 10<br>
+                        <strong>MAIN/SELFIE</strong>:  &nbsp;&nbsp;16MP/8MP<br>   
+                    </div>
+            </div>
+        </div>
+        
+        <div class="card-tab">
+            <img src="./assets/img/13_pro_max_white.png" alt="smartphone" class="card-img">
+            <div class="card-body">
+                <span class="trademark">APPLE</span><br>
+                <span class="product-name">iPHONE 13 PRO MAX</span><span class="badge cart-badge">-30% off</span><br>
+                <span class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                </span> <br>
+                <span class="price original">500.00<i class="bi bi-currency-euro"></i></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="price actual">630</span><i class="bi bi-currency-euro"></i>
+                <span><button class="cart3"> <i class="bi bi-cart3" style="display:inline-block"></i> </button></span><br>
+                <span class="specButton-container"><button class="spec-button"><span>View Specification</span> <i class="bi bi-caret-down-fill"></i></button></span> 
+                    <div class="spec-Details">
+                        <strong>COLOR</strong>: &nbsp;&nbsp;Just Black<br>
+                        <strong>MEMORY</strong>: &nbsp;&nbsp;128GB 6GB RAM<br>
+                        <strong>OS</strong>:  &nbsp;&nbsp;Android 10<br>
+                        <strong>MAIN/SELFIE</strong>:  &nbsp;&nbsp;16MP/8MP<br>   
+                    </div>
+            </div>
+        </div>  
+    
+        <div class="card-tab">
+            <img src="./assets/img/Iphone 12 pro max.png" alt="smartphone" class="card-img">
+            <div class="card-body">
+                <span class="trademark">APPLE</span><br>
+                <span class="product-name">iPHONE 12 PRO MAX</span><span class="badge cart-badge">-30% off</span><br>
+                <span class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                </span> <br>
+                <span class="price original">597.00<i class="bi bi-currency-euro"></i></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="price actual">630</span><i class="bi bi-currency-euro"></i>
+                <span><button class="cart3"> <i class="bi bi-cart3" style="display:inline-block"></i> </button></span><br>
+                <span class="specButton-container"><button class="spec-button"><span>View Specification</span> <i class="bi bi-caret-down-fill"></i></button></span> 
+                    <div class="spec-Details">
+                        <strong>COLOR</strong>: &nbsp;&nbsp;Just Black<br>
+                        <strong>MEMORY</strong>: &nbsp;&nbsp;128GB 6GB RAM<br>
+                        <strong>OS</strong>:  &nbsp;&nbsp;Android 10<br>
+                        <strong>MAIN/SELFIE</strong>:  &nbsp;&nbsp;16MP/8MP<br>   
+                    </div>
+            </div>
+        </div>  
+    
+        <div class="card-tab">
+            <img src="./assets/img/iphone_14_pro.png" alt="smartphone" class="card-img" width="100%">
+            <div class="card-body">
+                <span class="trademark">APPLE</span><br>
+                <span class="product-name">iPHONE 14 PRO MAX</span><span class="badge cart-badge">-30% off</span><br>
+                <span class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </span> <br>
+                <span class="price original">1,250.00<i class="bi bi-currency-euro"></i></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="price actual">630</span><i class="bi bi-currency-euro"></i>
+                <span><button class="cart3"> <i class="bi bi-cart3" style="display:inline-block"></i> </button></span><br>
+                <span class="specButton-container"><button class="spec-button"><span>View Specification</span> <i class="bi bi-caret-down-fill"></i></button></span> 
+                    <div class="spec-Details">
+                        <strong>COLOR</strong>: &nbsp;&nbsp;Just Black<br>
+                        <strong>MEMORY</strong>: &nbsp;&nbsp;128GB 6GB RAM<br>
+                        <strong>OS</strong>:  &nbsp;&nbsp;Android 10<br>
+                        <strong>MAIN/SELFIE</strong>:  &nbsp;&nbsp;16MP/8MP<br>   
+                    </div>
+            </div>
+        </div> 
+        </section>
+
+        <section id="newsletter">
+            <h3>Newsletter</h3>
+            <hr data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200" style="width:200px;margin-left:0px;">
+            <div id="newsletter-body">
+                <div class="newsletterText">
+                    <p>Subscribe to our newsletter to get updates on every new product and <span>weekly special offers</span></p>
+                </div>
+                <div class="form-div">
+                    <form action="" class="newsletterForm">
+                        <i class="bi bi-envelope-at"></i>&nbsp;
+                        <input type="email" placeholder="Your email address" id="newsletterInput">
+                        <button class="nav-button newsletterSubscribe">Subscribe&nbsp;<i class="bi bi-bell"></i></button>
+                    </form>
+                </div>
+            </div>
+           </section>
+        </section>
+
+
+        <!--footer-->
+<!--section 8-->
+<section class="footer">
+    <div class="footer-block">
+        <div class="main-footer">
+            <div class="logo-div">
+                <img src="./assets/img/Miles_logo_footer.svg" alt="footer_logo" class="logo"><br><br>
+                <p>Our major priority is to unit all people with their dream smartphone at relatively low cost</p><br>
+
+            </div>
+            <div class="footer-div">
+              <h5>Contact</h5>
+              <span>Phone: </span><br><br>
+              <span>Hours: <strong> 07:00H - 23:00H</strong></span><br><br><br>
+              <span> <a href="">Contact us</a></span><br><br><br>
+              <h5>Follow us</h5>
+              <span>
+                    <a href=""><i class="bi bi-facebook"></i></a>&nbsp;&nbsp;
+                    <a href=""><i class="bi bi-instagram"></i></a>&nbsp;&nbsp;
+                    <a href=""><i class="bi bi-twitter"></i></a>&nbsp;&nbsp;
+              </span>
+            
+            </div>
+            <div class="footer-div">
+                <h5>About us</h5>
+                <span> <a href="">How we work</a></span><br><br>
+                <span> <a href="">Delivery info</a></span><br><br>
+                <span> <a href="">Terms and conditions</a></span><br><br>
+                <span> <a href="">Privacy policy</a></span><br><br><br>
+            </div>
+            <div class="footer-div">
+                <h5>Support</h5> 
+                <span> <a href="">FAQs</a></span><br><br>
+                <span> <a href="">Support center</a></span><br><br><br>
+                <h6 style="font-size:14px">Secured Payment Gateway</h6> <br>
+                <div class="paymentMethod">
+                <img src="./assets/img/paypal.png" alt="">&nbsp;&nbsp;
+                <img src="./assets/img/mastercard.png" alt=""></i>&nbsp;&nbsp;
+                <img src="./assets/img/visa.png" alt=""></i>&nbsp;&nbsp;
+                <img src="./assets/img/giropay.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <div class="lower-footer">
+         &COPY; Milesmobile. All rights reserved<br>
+        2022 - 2023. miles
+        </div>
+    </div>
+    
+</section>
+<!--end of footer-->
+
+
+    <!--Small screen navigation-->
+    <div class="floatNavigation">
+        <div class="navigation">
+          <ul class="navList">
+            <li class="navItem"><a href="./index.html" class="float-navlink"><i class="bi bi-house-fill"></i>HOME</a></li>
+            <li class="navItem"><a href="./Shop.html" class="float-navlink  Active"><i class="bi bi-bag-fill"></i>SHOP</a></li>
+            <li class="navItem"><a href="./about.html" class="float-navlink"><i class="bi bi-nut-fill"></i>ABOUT</a></li>
+            <li class="navItem"><a href="./contact.html" class="float-navlink"><i class="bi bi-phone-fill"></i>CONTACT</a></li>
+          </ul>
+        </div>
+    </div>
+
+    <div class="slideNavigation">
+        <div><i class="bi bi-x" role="button" onclick="CollapseNav()"></i></div>
+        <ul class="SlideList">
+            <li><a href="./index.html" class="slidelink"><i class="bi bi-house-fill"></i>&nbsp;&nbsp;HOME</a></li>
+            <li><a href="./Shop.html" class="slidelink  Active"><i class="bi bi-bag-fill"></i>&nbsp;&nbsp;SHOP</a></li>
+            <li><a href="./about.html" class="slidelink"><i class="bi bi-nut-fill"></i>&nbsp;&nbsp;ABOUT</a></li>
+            <li><a href="./contact.html" class="slidelink"><i class="bi bi-phone-fill"></i>&nbsp;&nbsp;CONTACT</a></li>
+        </ul>
+        <div class="slide-foot">
+        <div class="slideLogo"><img src="./assets/img/miles-logo-svg-vector.svg" alt="logo" height="100px" class="lightmode-image">
+            <img src="./assets/img/Miles_logo_footer.svg" alt="logo" height="100px" class="darkmode-image"></div>
+            <div class="social">
+                <a href=""><i class="bi bi-facebook"></i></a>&nbsp;&nbsp;
+                <a href=""><i class="bi bi-twitter"></i></a>&nbsp;&nbsp;
+                <a href=""><i class="bi bi-instagram"></i></a>&nbsp;&nbsp;
+            </div>
+        <div class="lower-footer slide-footer">
+            &COPY; Milesmobile. All rights reserved<br>
+           2022 - 2023. miles
+           </div>
+    </div>
+</div>
+<!--end of small screen navigation-->
+
+    <!--move to top button-->
+    <div id="toTop" title="move to top" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><button onclick="scrollToTop()" class="freeBottons"><i class="bi bi-chevron-double-up"></i></div>
+    <!--aos initializer-->
+    <script>AOS.init();</script>
+    
+    <!--toolTip support-->
+    <script>
+        $(document).ready( function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+
+   <!--Theme change module script-->
+    <script type="module">
+
+    </script>
+    
+</body>
+</html>

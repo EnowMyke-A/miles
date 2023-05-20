@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>MILES MOBILE | Realise That Dream SmartPhone</title>
+
+    <!--Bootstrap v4.6 css-->
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+
+    <!--main style-->
+    <link rel="stylesheet" href="./assets/main/style.css">
+    <link rel="stylesheet" href="./contact.css">
+    
+    <!--Bootsrap icons-->
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap-icons-1.10.4/bootstrap-icons-1.10.4/font/bootstrap-icons.css">
+
+    <!--favicon-->
+    <link rel="icon" href="./assets/img/Mile_logo_white.svg">
+
+    <!--aos-->
+    <link rel="stylesheet" href="./assets/aos/aos.css">
+
+    <!--google fonts poppins-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+
+    <!--All page scripts-->
+
+    <!--bootstrap v4.6js-->
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+    
+    <!--fontawesom5 js-->
+    <script src="./assets/font_awesome/all.js"></script>
+
+    <!--aos-->
+    <script src="assets/aos/aos.js"></script>
+
+    <!--main script-->
+    <script src="./assets/main/script.js"></script>
+</head>
+<body>
+
+    <!--navigation bar-->
+    <nav role="navigation" id="navigationBar">
+        <div id="logo">
+          <img src="./assets/img/miles-logo-svg-vector.svg" alt="logo" height="120px" class="logoImg lightmode-image">
+          <img src="./assets/img/Mile_logo_white.svg" alt="logo" height="120px" class="logoImg darkmode-image">
+          
+        </div>
+        <div class="navlist">
+            <li class="nav-item"><a href="./index.html" class="nav-link"><i class="bi bi-house icon"></i>&nbsp;<span>HOME</span></a></li>
+            <li class="nav-item"><a href="./Shop.html" class="nav-link"><i class="bi bi-bag icon"></i>&nbsp;<span>SHOP</span></a></li>
+            <li class="nav-item"><a href="./about.html" class="nav-link"><i class="bi bi-nut icon"></i>&nbsp;<span>ABOUT</span></a></li>
+            <li class="nav-item"><a href="./contact.html" class="nav-link active"><i class="bi bi-phone-fill icon"></i>&nbsp;<span>CONTACT</span></a></li>
+            <li class="nav-item cart-item"><a href=""><button class="nav-cart"><i class="bi bi-cart3"></i></button><span class="nav-badge">0</span></a></li>
+            <li class="nav-item"><a href="#newsletter"><button class="nav-button" onclick="NewsLetter()">Subscribe</button></a> </li>
+            <li class="nav-item" id="slide-button" role="button" onclick="SlideNav()"><i class="bi bi-list"></i></li>
+        </div>
+    </nav>
+    <!--end of navigation-->
+
+    <!--contact-->
+<section id="about" class="tab-content">
+    <div class="head-container">
+        <div class="Header-text">
+         <h1>#Let's_talk</h1>
+         <h6>Speak with agent and get clarified on any uncertainty</h6>
+        </div>
+    </div>
+</section>
+
+
+<!--contact-->
+
+<!--footer-->
+<section class="footer">
+    <div class="footer-block">
+        <div class="main-footer">
+            <div class="logo-div">
+                <img src="./assets/img/Miles_logo_footer.svg" alt="footer_logo" class="logo"><br><br>
+                <p>Our major priority is to unit all people with their dream smartphone at relatively low cost</p><br>
+
+            </div>
+            <div class="footer-div">
+              <h5>Contact</h5>
+              <span>Phone: </span><br><br>
+              <span>Hours: <strong> 07:00H - 23:00H</strong></span><br><br><br>
+              <span> <a href="">Contact us</a></span><br><br><br>
+              <h5>Follow us</h5>
+              <span>
+                    <a href=""><i class="bi bi-facebook"></i></a>&nbsp;&nbsp;
+                    <a href=""><i class="bi bi-instagram"></i></a>&nbsp;&nbsp;
+                    <a href=""><i class="bi bi-twitter"></i></a>&nbsp;&nbsp;
+              </span>
+            
+            </div>
+            <div class="footer-div">
+                <h5>About us</h5>
+                <span> <a href="">How we work</a></span><br><br>
+                <span> <a href="">Delivery info</a></span><br><br>
+                <span> <a href="">Terms and conditions</a></span><br><br>
+                <span> <a href="">Privacy policy</a></span><br><br><br>
+            </div>
+            <div class="footer-div">
+                <h5>Support</h5> 
+                <span> <a href="">FAQs</a></span><br><br>
+                <span> <a href="">Support center</a></span><br><br><br>
+                <h6 style="font-size:14px">Secured Payment Gateway</h6> <br>
+                <div class="paymentMethod">
+                <img src="./assets/img/paypal.png" alt="">&nbsp;&nbsp;
+                <img src="./assets/img/mastercard.png" alt=""></i>&nbsp;&nbsp;
+                <img src="./assets/img/visa.png" alt=""></i>&nbsp;&nbsp;
+                <img src="./assets/img/giropay.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <div class="lower-footer">
+         &COPY; Milesmobile. All rights reserved<br>
+        2022 - 2023. miles
+        </div>
+    </div>
+    
+</section>
+<!--end of footer-->
+
+<!--Small screen navigation-->
+    <div class="floatNavigation">
+        <div class="navigation">
+          <ul class="navList">
+            <li class="navItem"><a href="./index.html" class="float-navlink"><i class="bi bi-house-fill"></i>HOME</a></li>
+            <li class="navItem"><a href="./Shop.html" class="float-navlink"><i class="bi bi-bag-fill"></i>SHOP</a></li>
+            <li class="navItem"><a href="./about.html" class="float-navlink"><i class="bi bi-nut-fill"></i>ABOUT</a></li>
+            <li class="navItem"><a href="./contact.html" class="float-navlink  Active"><i class="bi bi-phone-fill"></i>CONTACT</a></li>
+          </ul>
+        </div>
+    </div>
+
+    <div class="slideNavigation">
+        <div><i class="bi bi-x" role="button" onclick="CollapseNav()"></i></div>
+        <ul class="SlideList">
+            <li><a href="./index.html" class="slidelink"><i class="bi bi-house-fill"></i>&nbsp;&nbsp;HOME</a></li>
+            <li><a href="./Shop.html" class="slidelink"><i class="bi bi-bag-fill"></i>&nbsp;&nbsp;SHOP</a></li>
+            <li><a href="./about.html" class="slidelink"><i class="bi bi-nut-fill"></i>&nbsp;&nbsp;ABOUT</a></li>
+            <li><a href="./contact.html" class="slidelink  Active"><i class="bi bi-phone-fill"></i>&nbsp;&nbsp;CONTACT</a></li>
+        </ul>
+        <div class="slide-foot">
+        <div class="slideLogo"><img src="./assets/img/miles-logo-svg-vector.svg" alt="logo" height="100px" class="lightmode-image">
+            <img src="./assets/img/Miles_logo_footer.svg" alt="logo" height="100px" class="darkmode-image"></div>
+            <div class="social">
+                <a href=""><i class="bi bi-facebook"></i></a>&nbsp;&nbsp;
+                <a href=""><i class="bi bi-twitter"></i></a>&nbsp;&nbsp;
+                <a href=""><i class="bi bi-instagram"></i></a>&nbsp;&nbsp;
+            </div>
+        <div class="lower-footer slide-footer">
+            &COPY; Milesmobile. All rights reserved<br>
+           2022 - 2023. miles
+           </div>
+    </div>
+</div>
+<!--end of small screen navigation-->
+
+<!--move to top button-->
+<div id="toTop" title="move to top" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><button onclick="scrollToTop()" class="freeBottons"><i class="bi bi-chevron-double-up"></i></div>
+    <!--aos initializer-->
+    <script>AOS.init();</script>
+
+    </body>
+</html>
